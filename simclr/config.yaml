@@ -1,0 +1,16 @@
+title: 'simclr_cifar'
+
+data_location: './data/'
+num_epochs: 1000
+batch_size: 2048
+save_path: './models/'
+
+opt:
+  lr: 0.0003
+  weight_decay: 0.0001
+
+simclr:
+
+  embedding_size: 512
+  temp: 0.7
+  transforms: True
