@@ -1,0 +1,3 @@
+simclr/__pycache__
+simclr/config_simclr_cifar/models
+simclr/pretrained_resnet50.pth
