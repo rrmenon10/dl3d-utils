@@ -35,7 +35,7 @@ def main():
                                              num_workers=4)
     # Define model
     simclr = SimCLR(np.array(train_data[0][0]).shape[1:],
-                    model_name='resnet50',
+                    model_name=config.simclr.model_name,
                     embedding_size=config.simclr.embedding_size,
                     temp=config.simclr.temp,
                     transform=config.simclr.transforms,
