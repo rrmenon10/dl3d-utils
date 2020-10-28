@@ -30,7 +30,7 @@ class SimCLR(nn.Module):
         self.criterion = torch.nn.CrossEntropyLoss(reduction="sum")
 
         # Define transforms
-        color_jitter = transforms.ColorJitter(0.8, 0.8, 0.8, 0.2)
+        color_jitter = transforms.ColorJitter(0.8, 0.8, 0.8, 0.2) # (brightness, contrast, saturation, hue)
         self.transforms = transforms.Compose([transforms.ToPILImage(),
                                               transforms.RandomResizedCrop(size=self.img_shape),
                                               transforms.RandomHorizontalFlip(),
