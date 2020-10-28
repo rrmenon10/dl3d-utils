@@ -10,7 +10,7 @@ opt:
   weight_decay: 0.0001
 
 simclr:
-
+  model_name: 'resnet50'
   embedding_size: 512
   temp: 0.7
   transforms: True
